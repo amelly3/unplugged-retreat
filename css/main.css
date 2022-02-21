@@ -130,15 +130,22 @@ ol {
     text-decoration: none;
 }
 
- 
-address {
-  font-style: normal;
-}
+  address {
+    font-style: normal;
+  }
 
-.content-wrapper {
-  width: 90%;
-  margin: 50px 0;
-}
+  .content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+  }
+
+  img { 
+    width: 100%;
+  }
+  
+  figure {
+          margin: 0;
+  }
 
   /*============= Base Header - Footer Styles ============*/
 
@@ -171,6 +178,14 @@ address {
     height: 1px;
     margin: 10px 0 20px 0;
   }
+
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
   header nav {
     display: flex;
@@ -232,6 +247,10 @@ address {
   /* Hero Area */
 
   .hero-area {
+    background: url('../img/person-on-bridge.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -243,6 +262,8 @@ address {
     font-weight: 500; 
     line-height: 1.2; 
   }
+
+
 
 /* Aside */
 
@@ -286,6 +307,9 @@ address {
   /* Features */
 
   .features {
+    background: url('../img/people-sitting-on-ground.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -330,6 +354,8 @@ address {
     width: 55%;
     margin: 20px 0;
   }
+
+
 
   /*============= Mobile Styles - About ============*/
 
@@ -561,6 +587,7 @@ address {
     }
 
     /* Reviews */
+
     .reviews article {
       display: flex;
       justify-content: space-between;
@@ -570,6 +597,7 @@ address {
       width: 85%;
     }
     
+    .reviews article figure,
     .reviews article div {
         width: 49%;      
     }   
@@ -689,7 +717,7 @@ address {
 
     /* Hero */
     .hero-area h1 {
-      width: 60%;
+      width: 80%;
       font-size: 3.75em;
     }
 
