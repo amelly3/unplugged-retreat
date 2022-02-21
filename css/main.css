@@ -104,25 +104,28 @@ textarea {
 ul, 
 ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
   h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.25em;
+    font-size: 1.875em;
     font-weight: 500;
+    margin: 0;
   }
 
   h3, 
   h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.125em;
     margin: 20px 0;
     font-weight: 500;
   }
 
   p {
     font-size: 0.875em;
-    line-height: 1.125em;
+    line-height: 1.285em;
   }
 
   a {
@@ -204,6 +207,9 @@ ol {
     width: 100%;
   }
 
+  header nav ul li {
+    font-size: 1.125em;
+  }
 
   /* Footer Styles */
 
@@ -239,7 +245,6 @@ ol {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 20px 0 20px;
   }
   
   footer .social-icons p i {
@@ -272,8 +277,6 @@ ol {
     line-height: 1.2; 
   }
 
-
-
 /* Aside */
 
   aside {
@@ -282,7 +285,6 @@ ol {
     align-items: center;
     flex-flow: row wrap;
     background-color: #527158;
-    color: #e2e3ed;
   }
 
   /*============= Aside Form ============*/
@@ -540,7 +542,7 @@ ol {
 
     h2 {
       font-size: 2.25em;
-      line-height: 1.33
+      line-height: 1.333;
     }
 
     h3 {
@@ -577,6 +579,10 @@ ol {
 
    /* Hero Area */
  
+   .hero-area {
+    min-height: 600px;
+  }
+
    .hero-area h1 {
      font-size: 3em;
      line-height: 1;
@@ -614,6 +620,10 @@ ol {
     .features .features-item-description {
         width: 62%;
     }
+
+  .features i {
+    margin-bottom: 30px;
+  }
 
     /* Reviews */
 
@@ -662,6 +672,11 @@ ol {
     line-height: 1.285;
   }
 
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
   footer .copyright {
     width: 100%;
   }
@@ -669,6 +684,10 @@ ol {
   /* ==========================================================================
    FAQ Page
    ========================================================================== */
+
+   header nav ul li {
+    padding: 0 .5em;
+  }
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -718,11 +737,7 @@ ol {
 }
 
 .map figure {
-  width: 100%;
-  height: 0; 
   padding-bottom: 45%; 
-  overflow: hidden;
-  position: relative;
 }
    
   }
@@ -801,18 +816,15 @@ ol {
    .mission h2,
    .contact-section .content-wrapper h2 {
        width: 95%;
+       font-size: 3em;
    }
 
    .contact-content h4 {
      font-size: 1.875em;
    }
 
-   .map figure {
-    width: 100%;
-    height: 0; 
+   .map figure { 
     padding-bottom: 37%; 
-    overflow: hidden;
-    position: relative;
 }
 
 /* ==========================================================================
@@ -820,6 +832,7 @@ ol {
   ========================================================================== */
    .faq h2 {
        width: 100%;
+       font-size: 3em;
    }
    .faq h4,
    .faq p {
